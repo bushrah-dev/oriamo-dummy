@@ -1,0 +1,161 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ojuju", sans-serif;
+
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(blue, skyblue);
+}
+
+.container{
+    position: relative;
+    max-width: 455px;
+    width: 100%;
+    border-radius: 30px;
+    padding: 20px 30px 30px 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    background: #fff;
+    overflow: hidden;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    width: 180px;
+    height: 100px;
+    object-fit: cover;
+}
+.logo i{
+    font-size: 40px;
+    color: greenyellow;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.logo i:hover{
+    color: yellowgreen;
+}
+.main-image{
+    position: relative;
+    height: 310px;
+}
+.main-image img{
+    position: absolute;
+    width: 350px;
+    height: 270px;
+    transform: rotate(5deg);
+    object-fit: cover;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5 ease;
+}
+.main-image img.active{
+opacity: 1;
+}
+.prod-name{
+    font-size: 30px;
+    font-weight: 600;
+    color: #161616;
+}
+.prod-name p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    text-align: justify;
+}
+.product-deets .stars {
+    margin: 3px -3px;
+    font-size: 20px;
+    text-align: left;
+    color: yellowgreen;
+}
+.color{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.color-option{
+    display: flex;
+    align-items: center;
+}
+.color-option .color{
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 10px;
+    color: yellowgreen;
+}
+.color-option .circles{
+    display: flex;
+}
+.color-option .circles .circle{
+    height: 20px;
+    width: 23px;
+    background: black;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.color-option .circles .circle.black.active{
+    box-shadow: 0 0 0 2px #fff,
+                0 0 0 4px black;
+}
+.color-option .circles .circle.red{
+    background: red;
+}
+.color-option .circles .circle.red.active{
+    box-shadow: 0 0 0 2px #fff,
+                0 0 0 4px red;
+}
+.color-option .circles .circle.blue{
+    background: blue;
+}
+.color-option .circles .circle.blue.active{
+    box-shadow: 0 0 0 2px #fff,
+                0 0 0 4px blue;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+}
+.price .price-num{
+    font-size: 20px;
+    font-weight: 500;
+}
+.price .price-letter{
+    font-size: 14px;
+    margin-top: -4px;
+}
+.btn{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    border-radius: 25px;
+    margin-top: 40px;
+    background: blue;
+}
+.btn button{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: none;
+    cursor: pointer;
+    color: #fff;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    font-weight: 600;
+}
